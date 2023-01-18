@@ -5,11 +5,7 @@ public class House {
     private String address;
     private String[] residentsNames;
 
-    public House(int floorsNumber, String address, String[]residentNames){
-        this.floorsNumber = floorsNumber;
-        this.address = address;
-        this.residentsNames = residentNames;
-    }
+    public House(){}
 
     public int getFloorsNumber() {
         return floorsNumber;

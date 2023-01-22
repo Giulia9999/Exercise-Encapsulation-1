@@ -7,27 +7,36 @@ public class Start {
         House house = new House();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Insert address");
-        house.setAddress(scanner.nextLine());
+        System.out.print("Insert address: ");
+        house.setAddress(scanner.nextLine().trim());
+        house.stringValidation(house.getAddress());
 
 
-        System.out.print("Insert floor numbers");
-        house.setFloorsNumber(scanner.nextInt());
+        System.out.print("Insert floor numbers: ");
+        if(scanner.hasNextInt()){
+            house.setFloorsNumber(scanner.nextInt());
+        }else{
+            System.out.println("Not a number");
+            return;
+        }
 
 
         Scanner arrayScanner = new Scanner(System.in);
 
-        System.out.print("Insert resident names");
-        house.setResidentsNames(new String[]{arrayScanner.nextLine()});
+        System.out.print("Insert the number of residents: ");
 
-
-        System.out.printf("The address is %s %n",house.getAddress());
-        System.out.printf("The number of floors is %d %n",house.getFloorsNumber());
-
-        for(String residents : house.getResidentsNames()){
-            System.out.printf("The names of the residents are %s %n", residents);
+        house.setResidentsNames(new String[arrayScanner.nextInt()]);
+        System.out.println("Enter the name of the residents:");
+        arrayScanner.nextLine();
+        for(int i=0; i<house.getResidentsNames().length; i++)
+        {
+            house.getResidentsNames()[i] = arrayScanner.nextLine();
         }
+        house.stringArrayValidation(house.getResidentsNames());
 
+
+        house.getData(house.getFloorsNumber(),house.getAddress(), house.getResidentsNames());
+        house.setData();
 
     }
 }

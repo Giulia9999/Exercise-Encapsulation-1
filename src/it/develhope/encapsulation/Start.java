@@ -35,7 +35,6 @@ public class Start {
         house.stringArrayValidation(house.getResidentsNames());
 
 
-        house.getData(house.getFloorsNumber(),house.getAddress(), house.getResidentsNames());
         house.setData();
 
     }

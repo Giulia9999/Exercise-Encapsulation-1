@@ -5,11 +5,6 @@ public class House {
     private String address;
     private String[] residentsNames;
 
-    public void getData(int floorsNumber, String address, String[] residentsNames){
-        this.floorsNumber = floorsNumber;
-        this.address = address;
-        this.residentsNames = residentsNames;
-    }
 
     public void setData(){
         System.out.printf("The address is %s %n",address);
@@ -36,7 +31,7 @@ public class House {
         try {
             for(int j = 0; j<getSomething.length; j++){
                 getSomething[j] = String.valueOf(Integer.parseInt(getSomething[j]));
-                System.out.println(getSomething[j] + "is not a string type");
+                System.out.println(getSomething[j] + " is not a string type");
             }
             System.exit(0);
         }catch (NumberFormatException e){

@@ -4,7 +4,6 @@
     <list default="true" id="3226d395-5619-4472-b5ac-100275379cb4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/develhope/encapsulation/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/encapsulation/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/develhope/encapsulation/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/develhope/encapsulation/Start.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +39,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Gaetano/Desktop/CORSO JAVA/_05.Inheritance",
+    "last_opened_file_path": "C:/Users/Gaetano/Desktop/CORSO JAVA/Esercizi/Encapsulation 01",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>

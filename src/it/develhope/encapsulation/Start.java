@@ -9,7 +9,6 @@ public class Start {
 
         System.out.print("Insert address: ");
         house.setAddress(scanner.nextLine().trim());
-        house.stringValidation(house.getAddress());
 
 
         System.out.print("Insert floor numbers: ");
@@ -23,19 +22,10 @@ public class Start {
 
         Scanner arrayScanner = new Scanner(System.in);
 
-        System.out.print("Insert the number of residents: ");
-
-        house.setResidentsNames(new String[arrayScanner.nextInt()]);
         System.out.println("Enter the name of the residents:");
-        arrayScanner.nextLine();
-        for(int i=0; i<house.getResidentsNames().length; i++)
-        {
-            house.getResidentsNames()[i] = arrayScanner.nextLine();
-        }
-        house.stringArrayValidation(house.getResidentsNames());
+        house.setResidentsNames(arrayScanner.nextLine().split(","));
 
-
-        house.setData();
+        house.printData();
 
     }
 }

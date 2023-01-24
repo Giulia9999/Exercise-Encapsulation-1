@@ -6,7 +6,7 @@ public class House {
     private String[] residentsNames;
 
 
-    public void setData(){
+    public void printData(){
         System.out.printf("The address is %s %n",address);
         System.out.printf("The number of floors is %d %n",floorsNumber);
 
@@ -16,29 +16,6 @@ public class House {
     }
 
 
-    public String stringValidation(String getSomething){
-        try {
-            int i = Integer.parseInt(getSomething);
-            System.out.println(i + " is not a string");
-            System.exit(0);
-        }catch (NumberFormatException e){
-            return getSomething;
-        }
-        return null;
-    }
-
-    public String[] stringArrayValidation(String[] getSomething){
-        try {
-            for(int j = 0; j<getSomething.length; j++){
-                getSomething[j] = String.valueOf(Integer.parseInt(getSomething[j]));
-                System.out.println(getSomething[j] + " is not a string type");
-            }
-            System.exit(0);
-        }catch (NumberFormatException e){
-            return getSomething;
-        }
-        return null;
-    }
 
     public int getFloorsNumber() {
         return floorsNumber;

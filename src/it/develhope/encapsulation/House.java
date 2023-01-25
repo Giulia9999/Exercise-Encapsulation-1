@@ -15,8 +15,6 @@ public class House {
         }
     }
 
-
-
     public int getFloorsNumber() {
         return floorsNumber;
     }
